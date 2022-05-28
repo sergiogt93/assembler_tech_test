@@ -1,4 +1,4 @@
-const endpoint = "http://localhost:3030/api/v1/gifs";
+const endpoint = `${process.env.REACT_APP_SERVER_NODE}/gifs`;
 
 export async function createGifAPI(token, gif) {
   return fetch(`${endpoint}`, {

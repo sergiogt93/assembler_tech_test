@@ -1,4 +1,4 @@
-const endpoint = "http://localhost:3030/api/v1/categories";
+const endpoint = `${process.env.REACT_APP_SERVER_NODE}/categories`;
 
 export async function getCategoriesAPI() {
   return fetch(`${endpoint}`);

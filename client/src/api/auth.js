@@ -1,4 +1,4 @@
-const endpoint = "http://localhost:3030/api/v1";
+const endpoint = process.env.REACT_APP_SERVER_NODE;
 
 export async function signupAPI(token, user) {
   return fetch(`${endpoint}/signup`, {

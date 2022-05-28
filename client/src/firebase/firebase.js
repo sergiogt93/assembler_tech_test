@@ -9,14 +9,13 @@ import {
 } from "firebase/auth";
 
 // Your web app's Firebase configuration
-console.log(process.env.REACT_APP_FIREBASE_API_KEY);
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: "assemblertech-1d3a8.firebaseapp.com",
-  projectId: "assemblertech-1d3a8",
-  storageBucket: "assemblertech-1d3a8.appspot.com",
-  messagingSenderId: "666952794961",
-  appId: "1:666952794961:web:f12c63d5cb3a736efd8970",
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_SOTRAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_MESSAGING_APP_ID,
 };
 
 // Initialize Firebase
