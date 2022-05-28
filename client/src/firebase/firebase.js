@@ -9,8 +9,9 @@ import {
 } from "firebase/auth";
 
 // Your web app's Firebase configuration
+console.log(process.env.REACT_APP_FIREBASE_API_KEY);
 const firebaseConfig = {
-  apiKey: "AIzaSyCOtpV61orRSMIyU0zmGIezVf0sdpiXCTU",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "assemblertech-1d3a8.firebaseapp.com",
   projectId: "assemblertech-1d3a8",
   storageBucket: "assemblertech-1d3a8.appspot.com",
