@@ -27,7 +27,7 @@ export function AuthProvider({ children }) {
     try {
       const { user } = await signupWithEmailAndPassword(email, password);
       const { accessToken, uid } = user;
-      const gift = { uid: uid, email: email };
+      const gift = { uid, email };
       await signupAPI(accessToken, gift);
       setCurrentUser(user);
     } catch (error) {
